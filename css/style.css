@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HEADER-------------------------------------------------------------------*/
+header {
+    background: linear-gradient(#15a8df,rgb(72, 72, 250));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    height: 260px;
+    overflow: hidden;
+}
+
+header h1, header p {
+    margin: 0;
+    padding-left: 200px;
+    padding-right: 20px;
+    text-align: left;
+}
+
+header h1{
+    font-size: 3.5em;
+}
+header p{
+    font-size: 1.5em;
+}
+
+.fab-image {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 100px;
+    height: auto;
+}
+
+/*MAIN-------------------------------------------------------------------*/
+main{
+    display: flex;
+    bottom: 10px;
+    right: 10px;
+    width: auto;
+    height: auto;
+}
+
+.section
+{
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    gap: 20px; /* Añade espacio entre las secciones */
+    padding: 30px; /* Añade un padding para que no toque los bordes */
+}
+
+#short-information {
+    width: 20%; /* Abarca todo el ancho del contenedor */
+    padding: 20px;
+    border-right: 1px solid;
+    border-color: rgb(244, 244, 244);
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+}
+
+.fab-image-1
+{
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: auto;
+}
+
+#short-information h3 {
+    margin-top: 0;
+}
+
+#short-information ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#short-information li {
+    margin-bottom: 5px;
+}
+
+#short-information a {
+    text-decoration: none;
+}
+
+#short-information a:hover {
+    text-decoration: none;
+}
+
+/*FOOTER-----------------------------------------------------------------*/
+footer {
+    padding: 20px;
+    background-color: #f8f9fa; /* Puedes ajustar el color según tu diseño */
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-columns div {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-columns h2 {
+    margin-bottom: 10px;
+}
+
+.footer-bottom p {
+    text-align: center;
+    margin: 5px 0;
+}
