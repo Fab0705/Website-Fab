@@ -203,3 +203,29 @@ footer {
     color: #fdc12d;
     font-weight: bold;
 }
+
+.biography{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.row-section{
+    display: flex;
+    flex: 1;
+    min-width: 300px;
+    gap: 15px;
+    flex-direction: column;
+}
+.section-box{
+    background-color: #2c2c37;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    box-sizing: border-box;
+}
+.section-box p{
+    margin: 0;
+}
+.section-header{
+    margin: 0;
+}
