@@ -47,7 +47,7 @@ main{
 #short-information {
     position: sticky;
     top: 0;
-    width: 50%;
+    width: 70%;
     height: 100vh;
     background-color: #1f1f2b;
     text-align: center;
@@ -128,6 +128,90 @@ main{
     text-decoration: none;
 }
 
+
+/* Alinear los botones uno al lado del otro */
+.card-box-drop {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.dropdown-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+.dropdown-btn img{
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+}
+.card-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Asegura que el contenido desplegable esté centrado y oculto inicialmente */
+.dropdown-content {
+    display: none;
+    position: relative;
+    margin-top: 10px;
+    background-color: #2c2c37;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+.dropdown-content h3{
+    font-size: 1em;
+}
+.dropdown-content p{
+    font-size: 0.8em;
+    text-align: start;
+}
+
+.dropdown-content.active {
+    display: block;
+}
+
+.content-usil,
+.content-idat {
+    display: none;
+}
+
+.content-usil.active,
+.content-idat.active {
+    display: block;
+}
+
+.close-btn {
+    background-color: #fdc12d;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.close-btn:hover {
+    background-color: #fcae2c;
+}
+
+.close-btn:active {
+    background-color: #e59e1d;
+    transform: scale(0.98);
+}
+
+
 /*FOOTER-----------------------------------------------------------------*/
 footer {
     background-color: #24222e; /* Ajusta el color de fondo según el diseño */
@@ -193,4 +277,119 @@ footer {
 }
 .section-header{
     margin: 0;
+}
+/*SERVICE-------------------------------------------------------------------*/
+.title {
+    font-size: 1.8em; /* Tamaño del texto, ajusta según sea necesario */
+}
+
+.box-service {
+    background-color: #2c2c37;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px; /* Asegura un ancho mínimo para cada caja */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.box-service h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.box-service p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+#service {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.btn-more {
+    background-color: #fdc12d;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-more:hover {
+    background-color: #fcae2c;
+    transform: scale(1.05);
+}
+
+.btn-more:active {
+    background-color: #e59e1d;
+    transform: scale(0.98);
+}
+
+/*SKILLS-------------------------------------------------------------------*/
+.skills-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 15px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 200px;
+    box-sizing: border-box;
+}
+ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    padding: 10px;
+    background-color: #2c2c37;
+    border-radius: 4px;
+}
+.skill-name{
+    flex: 1;
+    text-align: left;
+}
+.skill-bar{
+    width: 50%;
+    height: 10px;
+    background-color: #3b3b47;
+    border-radius: 5px;
+    margin-left: 10px;
+    position: relative;
+}
+.skill-level{
+    height: 100%;
+    background-color: #fdc12d;
+    border-radius: 5px;
+    display: block;
+}
+ul li:last-child{
+    margin-bottom: 0;
+}
+
+/*RESPONSIVE-------------------------------------------------------------------*/
+@media (max-width: 768px){
+    .skills-container{
+        flex-direction: column;
+        align-items: center;
+    }
 }
