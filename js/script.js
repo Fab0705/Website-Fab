@@ -1,4 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const dropdownBtnContact = document.querySelector('.dropdown-contact');
+    const dropdownContentContact = document.querySelector('.content-contact');
+
+    dropdownBtnContact.addEventListener('click', function() {
+        // Alterna la visibilidad del contenido de contacto
+        dropdownContentContact.style.display = dropdownContentContact.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // Cierra el desplegable si se hace clic en cualquier otro lugar de la página
+    window.addEventListener('click', function(e) {
+        if (!dropdownBtnContact.contains(e.target) && !dropdownContentContact.contains(e.target)) {
+            dropdownContentContact.style.display = 'none';
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
     const dropdownBtns = document.querySelectorAll('.dropdown-btn');
     const contentUsil = document.querySelector('.content-usil');
     const contentIdat = document.querySelector('.content-idat');
@@ -12,11 +29,11 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Muestra el contenido correspondiente según el botón que se ha clicado
             if (index == 0) {
-                contentIdat.classList.add('active');
-                contentUsil.classList.remove('active');
-            } else {
                 contentUsil.classList.add('active');
                 contentIdat.classList.remove('active');
+            } else {
+                contentIdat.classList.add('active');
+                contentUsil.classList.remove('active');
             }
         });
     });
