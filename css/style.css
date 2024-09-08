@@ -23,6 +23,27 @@ body {
     flex-direction: row;
 }
 
+/* Estilo para la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 1px; /* Ancho de la barra de scroll */
+}
+
+/* Estilo del track (fondo de la barra) */
+::-webkit-scrollbar-track {
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo del pulgar (la parte que se mueve) */
+::-webkit-scrollbar-thumb {
+    background-color: #424251; /* Color del pulgar */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo del pulgar cuando está activo (al arrastrarlo) */
+::-webkit-scrollbar-thumb:active {
+    background-color: #4a7; /* Color cuando se arrastra */
+}
+
 /*MAIN-------------------------------------------------------------------*/
 main{
     display: flex;
@@ -47,12 +68,13 @@ main{
 #short-information {
     position: sticky;
     top: 0;
-    width: 90%;
+    width: 92%;
     height: 100vh;
     background-color: #1f1f2b;
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     z-index: 1000;
     /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
 }
@@ -80,6 +102,7 @@ main{
 .contentbox-info{
     padding: 20px 40px 0 40px;
     flex: 1;
+    overflow-y: auto;
 }
 
 .gen-info{
@@ -96,10 +119,60 @@ main{
     margin: 0;
 }
 
-.language-level{
-    
+
+.language-level {
     display: flex;
     flex-direction: column;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.language {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+    background-color: #3b3b47;
+    position: relative;
+}
+
+.circle::before {
+    content: '';
+    width: 70px;
+    height: 70px;
+    background-color: #3b3b47;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.percentage {
+    font-size: 1.2em;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+}
+
+.language-level p {
+    font-size: 1em;
+    color: #fff;
+    margin: 0;
+    padding-top: 5px;
 }
 
 .education h3
@@ -129,11 +202,24 @@ main{
     text-decoration: none;
 }
 
+.dropdown-contact{
+    cursor: pointer;
+}
+.content-contact{
+    display: none;
+    position: relative;
+    margin-top: 10px;
+    font-size: 0.95em;
+    background-color: #2c2c37;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
 
 /* Alinear los botones uno al lado del otro */
 .card-box-drop {
     display: flex;
-    justify-content: space-between;
     gap: 10px;
 }
 
@@ -198,7 +284,7 @@ main{
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 12px;
     text-align: center;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -219,6 +305,7 @@ footer {
     padding: 20px;
     text-align: center;
     /* Asegura que el footer se mantenga al final del aside */
+    flex-shrink: 0;
 }
 
 /*MAIN info-------------------------------------------------------------------*/
@@ -278,19 +365,6 @@ footer {
 .section-header{
     margin: 0;
 }
-
-.content-contact{
-    display: none;
-    position: relative;
-    margin-top: 10px;
-    font-size: 0.95em;
-    background-color: #2c2c37;
-    border-radius: 8px;
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
 
 /*SERVICE-------------------------------------------------------------------*/
 .title {
