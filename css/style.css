@@ -91,9 +91,13 @@ main{
 {
     font-size: 0.95em;
 }
+.text{
+    margin-top: 10px;
+}
 .fab-image-1
 {
     display: block;
+    border-radius: 50%;
     margin: auto;
     width: 100px;
     height: auto;
