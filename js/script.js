@@ -33,14 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
     dropdownBtnContact.addEventListener('click', function() {
         dropdownContentContact.style.display = dropdownContentContact.style.display === 'block' ? 'none' : 'block';
     });
-
-    // Cierra el desplegable si se hace clic en cualquier otro lugar de la página
-    /* window.addEventListener('click', function(e) {
-        if (!dropdownBtnContact.contains(e.target) && !dropdownContentContact.contains(e.target)) {
-            dropdownContentContact.style.display = 'none';
-        }
-    }); */
-
+    
     //Circle level language
 
     const circles = document.querySelectorAll('.circle');
