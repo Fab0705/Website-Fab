@@ -9,14 +9,68 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/6da7c8e207.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <title>Home</title>
 </head>
 <body>
-    <!-- <header>
-        <img src="" alt="fab1" class="fab-image">
-        <h1 class="poppins-bold">Fabian Cristobal</h1>
-        <p class="poppins-medium">Full-stack Developer</p>
-    </header> -->
+    <div id="modal-web-development" class="modal">
+        <div class="modal-content">
+            <div class="modal-header poppins-bold">
+                <h1 class="modal-title">Web Development</h1>
+                <span id="closeModal" class="close">&times;</span>
+            </div>
+            <div class="modal-body poppins-regular">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veritatis provident aut laudantium quas, expedita officia eveniet rem numquam perferendis?</p>
+            </div>
+            <div class="modal-footer poppins-light">
+                <button id="closeModalFooter" type="button" class="btn-more" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+    <div id="modal-desktop-development" class="modal">
+        <div class="modal-content">
+            <div class="modal-header poppins-bold">
+                <h1 class="modal-title">Desktop Development</h1>
+                <span id="closeModal" class="close">&times;</span>
+            </div>
+            <div class="modal-body poppins-regular">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veritatis provident aut laudantium quas, expedita officia eveniet rem numquam perferendis?</p>
+            </div>
+            <div class="modal-footer poppins-light">
+                <button id="closeModalFooter" type="button" class="btn-more" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+    <div id="modal-info-system" class="modal">
+        <div class="modal-content">
+            <div class="modal-header poppins-bold">
+                <h1 class="modal-title">Information System Development</h1>
+                <span id="closeModal" class="close">&times;</span>
+            </div>
+            <div class="modal-body poppins-regular">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veritatis provident aut laudantium quas, expedita officia eveniet rem numquam perferendis?</p>
+            </div>
+            <div class="modal-footer poppins-light">
+                <button id="closeModalFooter" type="button" class="btn-more" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+    <div id="modal-database" class="modal">
+        <div class="modal-content">
+            <div class="modal-header poppins-bold">
+                <h1 class="modal-title">Build and Maintenance Databases</h1>
+                <span id="closeModal" class="close">&times;</span>
+            </div>
+            <div class="modal-body poppins-regular">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veritatis provident aut laudantium quas, expedita officia eveniet rem numquam perferendis?</p>
+            </div>
+            <div class="modal-footer poppins-light">
+                <button id="closeModalFooter" type="button" class="btn-more" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
     <main>
         <aside id="short-information">
             <div class="contentbox-me">
@@ -139,30 +193,26 @@
                     <i class="fa-solid fa-globe"></i>
                     <h3 class="poppins-medium">Web Development</h3>
                     <p class="poppins-light">I have been studying web design for some years and I am still constantly learning.</p>
-                    <button class="btn-more">See more</button>
+                    <button type="button" class="btn-more" id="see-more" data-target="#modal-web-development">See more</button>
                 </div>
                 <div class="box-service">
                     <i class="fa-solid fa-desktop"></i>
                     <h3 class="poppins-medium">Desktop Development</h3>
                     <p class="poppins-light">I have experience in designing and developing desktop applications tailored to meet specific client requirements.</p>
-                    <button class="btn-more">See more</button>
+                    <button type="button" class="btn-more" id="see-more" data-target="#modal-desktop-development">See more</button>
                 </div>
                 <div class="box-service">
                     <i class="fa-solid fa-sitemap"></i>
                     <h3 class="poppins-medium">Information System Development</h3>
                     <p class="poppins-light">I have advanced knowledge to design an information system related to the client's needs.</p>
-                    <button class="btn-more">See more</button>
+                    <button type="button" class="btn-more" id="see-more" data-target="#modal-info-system">See more</button>
                 </div>
                 <div class="box-service">
                     <i class="fa-solid fa-database"></i>
                     <h3 class="poppins-medium">Build and Maintence Databases</h3>
                     <p class="poppins-light">I have knowledge of the effective construction of relational databases ideal for business and inventory control.</p>
-                    <button class="btn-more">See more</button>
+                    <button type="button" class="btn-more" id="see-more" data-target="#modal-database">See more</button>
                 </div>
-<!--                 <div class="box-info">
-                    <h3 class="poppins-medium">Fast & High Quality Delivery</h3>
-                    <p class="poppins-light">I deliver your business as fast as posible with the best quality.</p>
-                </div> -->
             </section>
             <section id="skills">
                 <h2 class="poppins-semibold">Technique skills</h2>

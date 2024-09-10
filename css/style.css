@@ -44,6 +44,80 @@ body {
     background-color: #4a7; /* Color cuando se arrastra */
 }
 
+/*MODAL-------------------------------------------------------------------*/
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1001;
+    background-color: #111111bd;
+    overflow: auto;
+    transition: opacity 0.3s ease;
+}
+.modal-content{
+    position: relative;
+    margin: 15% auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    color: white;
+    background-color: #1e1f28;
+    border-radius: 20px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    transform: translateY(-50px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.close{
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+.modal-title{
+    font-size: 2em;
+}
+.modal-body{
+    padding-bottom: 15px;
+}
+.modal-footer{
+    text-align: right;
+}
+.modal.show {
+    display: block;
+    opacity: 1;
+}
+.modal.show .modal-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+.modal.fade .modal-content {
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); }
+    to { transform: translateY(0); }
+}
+
 /*MAIN-------------------------------------------------------------------*/
 main{
     display: flex;
