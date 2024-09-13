@@ -1,0 +1,62 @@
+{
+    "profile":{
+        "rol": "Full-Stack Developer",
+        "residence": "Residence",
+        "age" : "Age",
+        "country": "Peru"
+    },
+    "language":{
+        "spanish": "Spanish",
+        "english": "English",
+        "portuguese": "Portuguese"
+    },
+    "education":{
+        "title": "Education",
+        "usil-education-title": "Information Systems Engineer",
+        "usil-education-text": "Skills learned in information systems data management and assurance",
+        "usil-education-time": "2022 - Currently studying",
+        "idat-education-title": "Web Development",
+        "idat-education-text": "Skills learned in web development using HTML5, CSS and JavaScript technologies.",
+        "idat-education-time": "Completed in 2022",
+        "btn-close": "Close"
+    },
+    "contact":{
+        "title": "Contact"
+    },
+    "banner-box":{
+        "title": "Explore my Dynamic Code Universe!",
+        "text": "I develop solutions with precision and reliability"
+    },
+    "information":{
+        "about-me": "About me",
+        "about-me-desc": "I am a technology enthusiast with problem-solving skills and a quick learner in technological topics. I have a creative background in graphic design and video editing, and I am moving towards software development, my true passion. My focus is to continue strengthening my skills as a programmer to provide innovative solutions in the technological field.",
+        "professional-objectives": "Professional Objectives",
+        "professional-objectives-desc": "I'm focused on becoming a competent Full-Stack developer, with a focus on creating efficient and scalable web applications. My goal is to apply my skills to contribute to challenging projects and continuously learn new technologies."
+    },
+    "service":{
+        "my-service": "My services",
+        "first-service": "Web Development",
+        "first-service-desc": "I have been studying web design for some years and I am still constantly learning.",
+        "second-service": "Desktop Development",
+        "second-service-desc": "I have experience in designing and developing desktop applications tailored to meet specific client requirements.",
+        "third-service": "Information System Development",
+        "third-service-desc": "I have advanced knowledge to design an information system related to the client's needs.",
+        "fourth-service": "Build an Maintence Databases",
+        "fourth-service-desc": "I have knowledge of the effective construction of relational databases ideal for business and inventory control.",
+        "btn-more": "See More"
+    },
+    "service-modal":{
+        "first-service-modal-title": "Web Development",
+        "first-service-modal-text": "With several years of dedicated study and continuous learning in web design, I have developed a deep understanding of creating visually appealing and user-friendly websites. My expertise includes HTML, CSS, JavaScript, and responsive design principles, ensuring that websites are not only attractive but also functional across various devices and screen sizes. I am skilled at integrating modern web development frameworks and tools to enhance performance and deliver exceptional user experiences that align with client goals.",
+        "second-service-modal-title": "Desktop Development",
+        "second-service-modal-text": "I specialize in designing and developing desktop applications that are tailored to meet specific client requirements. My approach involves a thorough understanding of the client's needs, allowing me to create robust, scalable, and efficient software solutions. Leveraging my experience in languages such as Java and C++, I build applications that are not only functional but also intuitive and user-centric, ensuring a seamless experience for end-users. My commitment to quality and attention to detail ensures that each application is thoroughly tested and optimized for performance.",
+        "third-service-modal-title": "Information System Development",
+        "third-service-modal-text": "With advanced knowledge in information system design, I am adept at creating systems that are precisely aligned with client needs. My expertise covers the entire development lifecycle, from requirements gathering and system design to implementation and maintenance. I focus on delivering scalable, secure, and efficient solutions that streamline operations and improve data management. By integrating modern technologies and best practices, I ensure that information systems are robust and adaptable to evolving business requirements.",
+        "fourth-service-modal-title": "Build an Maintence Databases",
+        "fourth-service-modal-text": "I possess comprehensive knowledge in the effective construction and maintenance of relational databases, tailored for business and inventory control. My skills include designing data models that accurately reflect business processes, optimizing database performance, and ensuring data integrity and security. I am proficient in SQL and database management systems, enabling me to implement databases that are not only reliable but also scalable to support business growth. My approach is grounded in best practices for database design, including normalization, indexing, and query optimization, to deliver efficient and maintainable database solutions.",
+        "btn-close": "Close"
+    },
+    "skills":{
+        "technique-skills": "Technique Skills"
+    }
+}

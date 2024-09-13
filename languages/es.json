@@ -1,0 +1,62 @@
+{
+    "profile":{
+        "rol": "Desarrollador Full-Stack",
+        "residence": "Residencia",
+        "age" : "Edad",
+        "country": "Perú"
+    },
+    "language":{
+        "spanish": "Español",
+        "english": "Inglés",
+        "portuguese": "Portugués"
+    },
+    "education":{
+        "title": "Educación",
+        "usil-education-title": "Ingeniero de Sistemas de Información",
+        "usil-education-text": "Habilidades aprendidas en gestión y aseguramiento de datos de sistemas de información",
+        "usil-education-time": "2022 - Actualmente estudiando",
+        "idat-education-title": "Desarrollo Web",
+        "idat-education-text": "Habilidades aprendidas en desarrollo web utilizando tecnologías HTML5, CSS y JavaScript.",
+        "idat-education-time": "Terminado en 2022",
+        "btn-close": "Cerrar"
+    },
+    "contact":{
+        "title": "Contacto"
+    },
+    "banner-box":{
+        "title": "¡Explora mi Universo de Código Dinámico!",
+        "text": "Desarrollo soluciones con precisión y confiabilidad"
+    },
+    "information":{
+        "about-me": "Sobre mí",
+        "about-me-desc": "Soy un entusiasta de la tecnología con capacidad para resolver problemas y aprendo rápido en temas tecnológicos. Tengo un bagaje creativo en diseño gráfico y edición de video, y estoy avanzando hacia el desarrollo de software, mi verdadera pasión. Mi enfoque es seguir fortaleciendo mis habilidades como programador para brindar soluciones innovadoras en el ámbito tecnológico.",
+        "professional-objectives": "Objetivos profesionales",
+        "professional-objectives-desc": "Estoy enfocado en convertirme en un desarrollador Full-Stack competente, con un enfoque en la creación de aplicaciones web eficientes y escalables. Mi objetivo es aplicar mis habilidades para contribuir a proyectos desafiantes y aprender continuamente nuevas tecnologías."
+    },
+    "service":{
+        "my-service": "Mis servicios",
+        "first-service": "Dessarrollo Web",
+        "first-service-desc": "Llevo algunos años estudiando diseño web y sigo en constante aprendizaje.",
+        "second-service": "Desarrollo de Escritorio",
+        "second-service-desc": "Tengo experiencia en el diseño y desarrollo de aplicaciones de escritorio adaptadas a los requisitos específicos del cliente.",
+        "third-service": "Dessarrollo de Sistemas de Infrmación",
+        "third-service-desc": "Tengo conocimientos avanzados para diseñar un sistema de información acorde a las necesidades del cliente.",
+        "fourth-service": "Construcción y Mantenimiento de Bases de Datos",
+        "fourth-service-desc": "Tengo conocimientos en la construcción efectiva de bases de datos relacionales ideales para el control de negocios e inventarios.",
+        "btn-more": "Ver más"
+    },
+    "service-modal":{
+        "first-service-modal-title": "Dessarrollo Web",
+        "first-service-modal-text": "Tras varios años de estudio y aprendizaje continuo en el campo del diseño web, he adquirido un profundo conocimiento sobre cómo crear sitios web visualmente atractivos y fáciles de usar. Mi experiencia incluye HTML, CSS, JavaScript y principios de diseño responsivo, lo que garantiza que los sitios web no solo sean atractivos, sino también funcionales en distintos dispositivos y tamaños de pantalla. Soy experto en la integración de herramientas y marcos de desarrollo web modernos para mejorar el rendimiento y ofrecer experiencias de usuario excepcionales que se alineen con los objetivos del cliente.",
+        "second-service-modal-title": "Dessarrollo Escritorio",
+        "second-service-modal-text": "Me especializo en el diseño y desarrollo de aplicaciones de escritorio que se adaptan a los requisitos específicos de los clientes. Mi enfoque implica una comprensión profunda de las necesidades del cliente, lo que me permite crear soluciones de software sólidas, escalables y eficientes. Aprovechando mi experiencia en lenguajes como Java y C++, creo aplicaciones que no solo son funcionales, sino también intuitivas y centradas en el usuario, lo que garantiza una experiencia perfecta para los usuarios finales. Mi compromiso con la calidad y la atención al detalle garantizan que cada aplicación se pruebe exhaustivamente y se optimice para su rendimiento.",
+        "third-service-modal-title": "Dessarrollo de Sistemas de Información",
+        "third-service-modal-text": "Con conocimientos avanzados en diseño de sistemas de información, soy experto en la creación de sistemas que se alinean con precisión con las necesidades del cliente. Mi experiencia abarca todo el ciclo de vida del desarrollo, desde la recopilación de requisitos y el diseño del sistema hasta la implementación y el mantenimiento. Me concentro en brindar soluciones escalables, seguras y eficientes que agilicen las operaciones y mejoren la gestión de datos. Al integrar tecnologías modernas y mejores prácticas, me aseguro de que los sistemas de información sean sólidos y adaptables a los requisitos empresariales en constante evolución.",
+        "fourth-service-modal-title": "Construcción y Mantenimiento de Bases de Datos",
+        "fourth-service-modal-text": "Poseo un amplio conocimiento en la construcción y el mantenimiento efectivos de bases de datos relacionales, adaptadas a las necesidades de los negocios y al control de inventarios. Mis habilidades incluyen el diseño de modelos de datos que reflejen con precisión los procesos de negocios, la optimización del rendimiento de las bases de datos y la garantía de la integridad y seguridad de los datos. Soy competente en SQL y sistemas de gestión de bases de datos, lo que me permite implementar bases de datos que no solo sean confiables sino también escalables para respaldar el crecimiento de la empresa. Mi enfoque se basa en las mejores prácticas para el diseño de bases de datos, incluida la normalización, la indexación y la optimización de consultas, para brindar soluciones de bases de datos eficientes y fáciles de mantener.",
+        "btn-close": "Cerrar"
+    },
+    "skills":{
+        "technique-skills": "Habilidades Técnicas"
+    }
+}
