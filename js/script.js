@@ -81,11 +81,25 @@ window.addEventListener('click', (event) => {
     }
 });
 
-function toggleAside() {
-    const aside = document.getElementById('short-information');
-    aside.classList.toggle('open');
-    aside.classList.toggle('closed');
-}
+const toggleButton = document.querySelector('.toggle-button');
+const mobileAside = document.querySelector('#mobile-aside');
+const overlay = document.querySelector('#overlay');
+
+toggleButton.addEventListener('click', () => {
+    mobileAside.classList.toggle('active');
+    overlay.classList.toggle('active'); 
+
+    if (mobileAside.classList.contains('active')) {
+        document.body.style.overflow = 'hidden'; // Desactiva el scroll
+    } else {
+        document.body.style.overflow = ''; // Vuelve a activar el scroll
+    }
+});
+overlay.addEventListener('click', () => {
+    mobileAside.classList.remove('active');
+    overlay.classList.remove('active');
+    document.body.style.overflow = ''; // Vuelve a activar el scroll
+});
 
 const flagsElement = document.getElementById("flags");
 

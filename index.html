@@ -12,7 +12,7 @@
     <title>Home</title>
 </head>
 <body>
-    <button class="toggle-button" onclick="toggleAside()">Menu</button>
+    <button class="toggle-button"><i class="fa-solid fa-bars"></i></button>
     <div id="modal-web-development" class="modal">
         <div class="modal-content">
             <div class="modal-header poppins-bold">
@@ -288,6 +288,101 @@
             </section>
         </div>
     </main>
+    <div id="overlay"></div>
+    <aside id="mobile-aside">
+        <div class="contentbox-me">
+            <img src="img/Fab.jpg" alt="fab" class="fab-image-1">
+            <div class="text">
+                <h3 class="poppins-semibold">Fabian Cristobal</h3>
+                <p class="poppins-regular" data-section="profile" data-value="rol">Full-Stack Developer</p>
+            </div>
+        </div>
+        <div class="contentbox-info">
+            <div class="gen-padding gen-info">
+                <div class="row">
+                    <p class="subtitle poppins-semibold" data-section="profile" data-value="residence">Residence</p>
+                    <p class="description poppins-regular" data-section="profile" data-value="country">Peru</p>
+                </div>
+                <div class="row">
+                    <p class="subtitle poppins-semibold" data-section="profile" data-value="age">Age</p>
+                    <p class="description poppins-regular">19</p>
+                </div>
+            </div>
+            <hr>
+            <div class="language-level poppins-regular">
+                <div class="row1">
+                    <div class="language">
+                        <div class="circle" data-percent="100">
+                            <span class="percentage">100%</span>
+                        </div>
+                        <p data-section="language" data-value="spanish">Spanish</p>
+                    </div>
+                    <div class="language">
+                        <div class="circle" data-percent="88">
+                            <span class="percentage">88%</span>
+                        </div>
+                        <p data-section="language" data-value="english">English</p>
+                    </div>
+                    <div class="language">
+                        <div class="circle" data-percent="45">
+                            <span class="percentage">45%</span>
+                        </div>
+                        <p data-section="language" data-value="portuguese">Portuguese</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="education">
+                <h3 class="poppins-semibold" data-section="education" data-value="title">Education</h3>
+                <div class="card-container">
+                    <div class="card-box-drop">
+                        <button class="dropdown-btn"><img src="img/usil.png" alt="Usil"></button>
+                        <button class="dropdown-btn"><img src="img/idat.png" alt="Idat"></button>
+                    </div>
+                    <div class="dropdown-content">
+                        <div class="content-usil">
+                            <h3 class="title poppins-semibold" data-section="education" data-value="usil-education-title">Information Systems Engineer</h3>
+                            <p class="learning poppins-light" data-section="education" data-value="usil-education-text">Skills learned in information systems data management and assurance</p>
+                            <p class="date poppins-thin" data-section="education" data-value="usil-education-time">2022 - Currently studying</p>
+                            <button class="close-btn" data-section="education" data-value="btn-close">Close</button>
+                        </div>
+                        <div class="content-idat">
+                            <h3 class="title poppins-semibold" data-section="education" data-value="idat-education-title">Web Development</h3>
+                            <p class="learnign poppins-light" data-section="education" data-value="idat-education-text">Skills learned in web development using HTML5, CSS and JavaScript technologies.</p>
+                            <p class="date poppins-thin" data-section="education" data-value="idat-education-time">Completed in 2022</p>
+                            <button class="close-btn" data-section="education" data-value="btn-close">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="contact">
+                <div class="custom-dropdown">
+                    <buttton class="dropdown-contact poppins-bold" data-section="contact" data-value="title">Contact</buttton>
+                    <div class="content-contact">
+                        <a class="poppins-light" href="mailto:f.cristobal.n0702@gmail.com">f.cristobal.n0702@gmail.com</a>
+                        <p class="poppins-light">+51 997578610</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div id="flags" class="flags">
+                    <div class="flags-item" data-language="es">
+                        <img src="/icons/es.svg" alt="Español">
+                    </div>
+                    <div class="flags-item" data-language="en">
+                        <img src="/icons/gb.svg" alt="English">
+                    </div>
+                </div>
+                <div class="vertical-divider"></div> <!-- Línea divisoria -->
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </footer>
+    </aside>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -10,10 +10,10 @@ a{
 }
 
 hr {
-    border: 0; /* Quita el borde por defecto */
-    height: 1px; /* Grosor de la línea */
-    background-color: #262730; /* Color de la línea */
-    margin: 20px 0; /* Espacio arriba y abajo de la línea */
+    border: 0;
+    height: 1px;
+    background-color: #262730;
+    margin: 20px 0;
 }
 
 body {
@@ -23,25 +23,21 @@ body {
     flex-direction: row;
 }
 
-/* Estilo para la barra de desplazamiento */
 ::-webkit-scrollbar {
-    width: 1px; /* Ancho de la barra de scroll */
+    width: 1px;
 }
 
-/* Estilo del track (fondo de la barra) */
 ::-webkit-scrollbar-track {
-    border-radius: 10px; /* Bordes redondeados */
+    border-radius: 10px;
 }
 
-/* Estilo del pulgar (la parte que se mueve) */
 ::-webkit-scrollbar-thumb {
-    background-color: #424251; /* Color del pulgar */
-    border-radius: 10px; /* Bordes redondeados */
+    background-color: #424251;
+    border-radius: 10px;
 }
 
-/* Estilo del pulgar cuando está activo (al arrastrarlo) */
 ::-webkit-scrollbar-thumb:active {
-    background-color: #4a7; /* Color cuando se arrastra */
+    background-color: #4a7;
 }
 
 /*MODAL-------------------------------------------------------------------*/
@@ -132,10 +128,129 @@ main{
 .sections
 {
     display: flex;
-    flex-direction: column; /* Coloca los elementos en columna */
-    gap: 20px; /* Añade espacio entre las secciones */
-    padding: 30px 50px; /* Añade un padding para que no toque los bordes */
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 50px;
 }
+
+/*ASIDE MOBILE------------------------------------------------------------*/
+#mobile-aside {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    height: 100vh;
+    background-color: #1f1f2b;
+    color: white;
+    transition: left 0.3s ease-in-out;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+}
+#mobile-aside.active {
+    left: 0;
+}
+#mobile-aside .text{
+    text-align: center;
+    font-size: 0.8em;
+}
+#mobile-aside .contentbox-info{
+    font-size: 0.8em;
+}
+#mobile-aside footer{
+    font-size: 1.7em;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #111111bd;
+    z-index: 1500;
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#overlay.active {
+    display: block;
+    opacity: 1;
+}
+#mobile-aside .dropdown-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+#mobile-aside .dropdown-btn img{
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+}
+#mobile-aside .card-container {
+    position: relative;
+    width: 100%;
+}
+
+#mobile-aside .dropdown-content {
+    display: none;
+    position: relative;
+    margin-top: 10px;
+    background-color: #2c2c37;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+#mobile-aside .dropdown-content h3{
+    font-size: 1em;
+}
+#mobile-aside .dropdown-content p{
+    font-size: 0.8em;
+    text-align: start;
+}
+
+#mobile-aside .dropdown-content.active {
+    display: block;
+}
+
+#mobile-aside .content-usil,
+#mobile-aside .content-idat {
+    display: none;
+}
+
+#mobile-aside .content-usil.active,
+#mobile-aside .content-idat.active {
+    display: block;
+}
+
+#mobile-aside .close-btn {
+    background-color: #fdc12d;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 12px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#mobile-aside .close-btn:hover {
+    background-color: #fcae2c;
+}
+
+#mobile-aside .close-btn:active {
+    background-color: #e59e1d;
+    transform: scale(0.98);
+}
+
 
 /*ASIDE-------------------------------------------------------------------*/
 
@@ -150,7 +265,6 @@ main{
     flex-direction: column;
     justify-content: space-between;
     z-index: 1000;
-    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
 }
 
 .contentbox-me{
@@ -303,7 +417,6 @@ main{
     box-sizing: border-box;
 }
 
-/* Alinear los botones uno al lado del otro */
 .card-box-drop {
     display: flex;
     gap: 10px;
@@ -328,7 +441,6 @@ main{
     width: 100%;
 }
 
-/* Asegura que el contenido desplegable esté centrado y oculto inicialmente */
 .dropdown-content {
     display: none;
     position: relative;
@@ -386,19 +498,18 @@ main{
 
 /*FOOTER-----------------------------------------------------------------*/
 footer {
-    background-color: #24222e; /* Ajusta el color de fondo según el diseño */
+    background-color: #24222e;
     color: white;
     padding: 20px;
     text-align: center;
-    /* Asegura que el footer se mantenga al final del aside */
     flex-shrink: 0;
 }
 .footer-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 300px; /* Ajusta el tamaño según sea necesario */
-    margin: 0 auto;   /* Centra el contenido dentro del footer */
+    max-width: 300px;
+    margin: 0 auto;
     position: relative;
 }
 
@@ -430,9 +541,9 @@ footer {
 }
 
 .vertical-divider {
-    height: 30px; /* Altura de la línea */
+    height: 30px;
     width: 1px;
-    background-color: #4d4d4d; /* Color de la línea */
+    background-color: #4d4d4d;
     margin: 0 15px;
 }
 
@@ -518,7 +629,7 @@ footer {
 
 /*SERVICE-------------------------------------------------------------------*/
 .title {
-    font-size: 1.8em; /* Tamaño del texto, ajusta según sea necesario */
+    font-size: 1.8em;
 }
 
 .box-service {
@@ -526,7 +637,7 @@ footer {
     border-radius: 8px;
     padding: 20px;
     flex: 1;
-    min-width: 250px; /* Asegura un ancho mínimo para cada caja */
+    min-width: 250px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -815,26 +926,26 @@ ul li:last-child{
 @media (max-width: 850px){
     main{
         display: flex;
-        flex-direction: column; /* Asegura que los elementos estén uno debajo del otro */
-        width: 100%; /* Ocupa todo el ancho disponible */
+        flex-direction: column;
+        width: 100%;
     }
     .bannerbox{
         display: none;
     }
     .bannerbox-mobile{
-        display: flex; /* Activa Flexbox */
-        flex-direction: column; /* Alinea los elementos en columna */
-        justify-content: center; /* Centra los elementos verticalmente */
-        align-items: center; /* Centra los elementos horizontalmente */
-        text-align: center; /* Centra el texto */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         padding: 0 50px;
     }
     .sections {
         display: flex;
-        flex-direction: column; /* Coloca los elementos en columna */
-        gap: 20px; /* Añade espacio entre las secciones */
-        padding: 30px 50px; /* Añade un padding para que no toque los bordes */
-        margin-top: 0; /* Asegúrate de que el contenido no tenga margen superior extra */
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 50px;
+        margin-top: 0;
     }
     .bannerbox-mobile h1 {
         font-size: 4.2em;
@@ -852,52 +963,33 @@ ul li:last-child{
         flex-direction: column;
     }
     .bannerbox {
-        padding: 50px 20px; /* Ajustamos padding para tablets */
+        padding: 50px 20px;
     }
 
     .bannerbox h1 {
-        font-size: 1.8em; /* Ajustamos tamaño de fuente para tablets */
+        font-size: 1.8em;
     }
 
     .fab-image {
-        max-width: 30%; /* Ajustamos tamaño de la imagen */
-        top: -30px; /* Ajustamos posición */
+        max-width: 30%;
+        top: -30px;
         right: 10px;
-    }
-
-
-    #short-information {
-        position: fixed; /* Cambia a fixed para que se comporte como un desplegable */
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: auto; /* Cambia el height a auto */
-        max-height: 60vh; /* Controla la altura máxima del desplegable */
-        overflow-y: hidden; /* Oculta el desbordamiento */
-        transition: max-height 0.3s ease; /* Transición suave para mostrar/ocultar */
-        z-index: 1000;
-    }
-
-    #short-information.closed {
-        max-height: 0; /* Altura cero cuando está cerrado */
-    }
-
-    #short-information.open {
-        max-height: 60vh; /* Ajusta esta altura según sea necesario */
     }
 
     .toggle-button {
+        display: block;
         position: fixed;
-        top: 10px;
-        right: 10px;
-        z-index: 1100;
-        cursor: pointer;
-        background-color: #fdc12d;
-        border: none;
-        padding: 10px;
-        border-radius: 5px;
+        top: 20px;
+        left: 20px;
         color: white;
-        font-size: 1em;
+        background: none;
+        cursor: pointer;
+        border: none;
+        z-index: 2100;
+    }
+
+    #short-information {
+        display: none;
     }
 }
 
@@ -911,8 +1003,8 @@ ul li:last-child{
     }
 
     .fab-image {
-        max-width: 35%; /* Aún más reducción en el tamaño de la imagen */
-        top: -20px; /* Ajustamos la posición de la imagen */
+        max-width: 35%;
+        top: -20px;
         right: 5px;
     }
 }
