@@ -87,16 +87,16 @@ window.addEventListener('resize', checkWindowSize);
 checkWindowSize();
 
 
-const flagsElement = document.getElementById("flags");
+const flagsDesktop = document.getElementById("flags-desktop");
 
-const textsToChange = document.querySelectorAll("[data-section]");
+const flagsMobile = document.getElementById("flags-mobile");
 
-const changeLanguage = async language=>{
+const changeLanguage = async language => {
     const requestJson = await fetch(`./languages/${language}.json`);
     const texts = await requestJson.json();
 
-    for (const textToChange of textsToChange)
-    {
+    const textsToChange = document.querySelectorAll("[data-section]");
+    for (const textToChange of textsToChange) {
         const section = textToChange.dataset.section;
         const value = textToChange.dataset.value;
 
@@ -104,6 +104,20 @@ const changeLanguage = async language=>{
     }
 };
 
-flagsElement.addEventListener("click", (e) => {
-    changeLanguage(e.target.parentElement.dataset.language);
-});
+if (flagsDesktop) {
+    flagsDesktop.addEventListener("click", (e) => {
+        const language = e.target.closest(".flags-item")?.dataset.language;
+        if (language) {
+            changeLanguage(language);
+        }
+    });
+}
+
+if (flagsMobile) {
+    flagsMobile.addEventListener("click", (e) => {
+        const language = e.target.closest(".flags-item")?.dataset.language;
+        if (language) {
+            changeLanguage(language);
+        }
+    });
+}
