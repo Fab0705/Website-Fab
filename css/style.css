@@ -1025,6 +1025,17 @@ ul li:last-child{
     .bannerbox p {
         font-size: 0.5em;
     }
+    .toggle-button {
+        display: block;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        color: white;
+        background: none;
+        cursor: pointer;
+        border: none;
+        z-index: 2100;
+    }
 }
 @media (max-width: 850px){
     main{
@@ -1077,18 +1088,6 @@ ul li:last-child{
         max-width: 30%;
         top: -30px;
         right: 10px;
-    }
-
-    .toggle-button {
-        display: block;
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        color: white;
-        background: none;
-        cursor: pointer;
-        border: none;
-        z-index: 2100;
     }
 
     #short-information {
