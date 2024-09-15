@@ -3,6 +3,7 @@
         "rol": "Desarrollador Full-Stack",
         "residence": "Residencia",
         "age" : "Edad",
+        "number": "Número",
         "country": "Perú"
     },
     "language":{

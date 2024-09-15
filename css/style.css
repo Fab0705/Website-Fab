@@ -282,6 +282,9 @@ main{
 .text{
     margin-top: 10px;
 }
+.text p{
+    margin-bottom: 10px;
+}
 .fab-image-1
 {
     display: block;
@@ -305,7 +308,8 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    padding-bottom: 10px;
+    gap: 20px;
 }
 .subtitle, .description{
     margin: 0;
@@ -632,6 +636,99 @@ footer {
 .section-header{
     margin: 0;
 }
+
+.education-main {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.education-main h3 {
+    margin-bottom: 15px;
+}
+
+.card-container-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.box-education {
+    background-color: #2c2c37;
+    border-radius: 8px;
+    padding: 50px;
+    flex: 1 1 auto;
+    max-width: 295px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    flex-direction: column; /* Asegura que los elementos se alineen en columna */
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.box-education:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.dropdown-btn-main {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Cambiar a absolute para que se superpongan */
+    top: 50%;
+    left: 50%;
+    backface-visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%) rotateY(0deg);
+}
+
+.dropdown-btn-main img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    max-height: 150px;
+}
+
+.dropdown-content-main {
+    box-sizing: border-box;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backface-visibility: hidden;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+}
+.box-education h3{
+    font-size: 1.1em;
+}
+.box-education p{
+    text-align: justify;
+}
+
+.box-education:hover {
+    height: auto;
+}
+
 
 /*SERVICE-------------------------------------------------------------------*/
 .title {
